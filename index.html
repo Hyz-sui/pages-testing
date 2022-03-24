@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <title>アモアスMOD役職説明</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="0e7b5244cfc343446d180c484a9c9939.webp" type="image/webp">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        
+    </head>
+
+    <body>
+        <h1>アモアスMOD役職説明</h1>
+        <div class="content">
+            <p>
+                このページでは、アモアスの追加役職をMODごとに説明します。
+            </p>
+            <div class="toc">
+                <div class="center lavel-toc">目次</div>
+                <ol>
+                    <li><a href="#TownofHost">TownofHost</a></li>
+                    <li>
+                        <a href="#TheOtherRolesGM">TheOtherRolesGM</a>
+                        <ol>
+                            <li><a href="#インポスター陣営">インポスター陣営</a></li>
+                            <li><a href="#クルー陣営">クルー陣営</a></li>
+                            <li><a href="#両方に出現">両方に出現</a></li>
+                            <li><a href="#第三陣営">第三陣営</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <h2 id="TownofHost">TownofHost</h2>
+            <p>
+                置き換え先が同じ役職は同時に設定できません(バージョン1.4からは置き換え式ではなくなりこの問題は解消されます)。
+            </p>
+            <ul>
+                <li>
+                    <span class="bold lavel-impostor">狂人(Madmate)</span>
+                    <div class="indent1">エンジニアを置き換え。インポスター陣営。インポスターの勝利のために行動するクルーメイト。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">てるてる(Jester)</span>
+                    <div class="indent1">科学者を置き換え。第三陣営。会議で吊られたらその時点で単独勝利。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">吸血鬼(Vampire)</span>
+                    <div class="indent1">インポスターを置き換え。インポスター陣営。キルボタンを押した10秒後に遅延してキルが発生する。ただし、相手がベイトだった場合は普通にキルしてしまう。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">ベイト(Bait)</span>
+                    <div class="indent1">科学者を置き換え。クルー陣営。ベイトをキルしたインポスターに強制的にセルフレポートさせる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">テロリスト(Terrorist)</span>
+                    <div class="indent1">エンジニアを置き換え。第三陣営。タスクをすべて完了させてから何らかの要因で死亡すると勝利。ベントが使える。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">相棒(Sidekick)</span>
+                    <div class="indent1">シェイプシフターを置き換え。ベント、サボ、変身ができ、キルができない。サイドキック以外のインポスターが全滅するとキル能力が解禁される。<span class="bold">v1.4b#4時点では廃止されている。</span></div>
+                </li>
+            </ul>
+            <h3 id="v1.4b#4で実装されている役職">v1.4b#4で実装されている役職</h3>
+            更新時点での最新版、バージョン1.4ベータ#4で実装されている役職です。β版なので正式版と比べてバグが発生する可能性が高いこと、開発者に迷惑がかかるのでバグなどに関する愚痴を書き込んだりしないことを理解した上で<a href="https://github.com/tukasa0001/TownOfHost/releases/tag/v1.4b%234">使用</a>。
+            <ul>
+                <li>
+                    <span class="bold lavel-impostor">バウンティハンター(BountyHunter)</span>
+                    <div class="indent1">ターゲットが設定され、そのターゲットをキルすると直後のキルクールが短くなる。</div>
+                </li>
+                <div class="img">
+                    <img src="img/bountytargetclient.png" alt="クライアントMODが導入されている場合、画面の中央下部にターゲットが表示される" title="クライアントMODあり" width="100%">
+                </div>
+            </ul>
+            <h2 id="TheOtherRolesGM">TheOtherRolesGM</h2>
+            <p>
+                ここでは主なもののみ説明します。載っていない役職は<a href="https://github.com/yukinogatari/TheOtherRoles-GM">こちら</a>を探すと説明があります。
+            </p>
+            <h3 id="インポスター陣営">インポスター陣営</h3>
+            <ul>
+                <li>
+                    <span class="bold lavel-impostor">バウンティハンター(Bounty Hunter)</span>
+                    <div class="indent1">一定時間ごとにターゲットが設定され、そのターゲットをキルするとその後のキルクールが非常に短くなる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">モーフィング(Morphling)</span>
+                    <div class="indent1">近くにいる人をスキャンし、その対象に変身することができる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">トリックスター(Trickster)</span>
+                    <div class="indent1">びっくり箱を好きな場所に3つ置くことができる。3つ置き切ると、箱は全員から見えるようになり、互いに接続されたベントとして使用できるようになる。さらに、3つの箱を置き終えた後のトリックスターは強制的に停電を起こすことができるようになる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">ヴァンパイア(Vampire)</span>
+                    <div class="indent1">時間差キルができる。ヴァンパイアが湧く可能性がある場合、すべてのプレイヤーは1つニンニクを置くことができ、置かれたニンニクの周辺では通常キルしかできなくなる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">ウォーロック(Warlock)</span>
+                    <div class="indent1">他のプレイヤーを呪うことができ、呪ったプレイヤーの近くにいる人をキルできる。呪殺を行ったウォーロックは一定時間硬直してしまう。通常キルも行うことができ、呪殺と通常キルはクールタイムが共有される。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">魔女(Witch)</span>
+                    <div class="indent1">他のプレイヤーを呪うことができ、呪ったプレイヤーは次の会議の後に死亡する。会議中、呪われたプレイヤーには全員が確認できる印が付く。オプション設定で、魔女が死亡したり、ゲッサーに撃たれたり、会議で吊られた場合に呪われたプレイヤーが死亡するかどうかを選べる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">ニンジャ(Ninja)</span>
+                    <div class="indent1">透明化できる。透明化状態では、移動速度が上昇する。透明化を使用すると、ペナルティとしてキルクールタイムが発生する。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">シリアルキラー(Serial Killer)</span>
+                    <div class="indent1">キルクールが短いが、一度キルを行った後、設定した時間が経過するまでにキルを行えなかった場合、自分が死亡してしまう。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">ネコカボチャ(Neko-Kabocha)</span>
+                    <div class="indent1">シェリフやジャッカルなどに殺害された場合、自分を殺害したシェリフやジャッカルなどを道連れにする。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">マフィア(Mafia)</span> - 三人組で構成される特殊なインポスター
+                    <ul>
+                        <li>
+                            <span class="bold lavel-impostor">ゴッドファーザー(Godfather)</span>
+                            <div class="indent1">普通のインポスターのようにキルができる。</div>
+                        </li>
+                        <li>
+                            <span class="bold lavel-impostor">マフィオソ(Mafioso)</span>
+                            <div class="indent1">はじめはキルができないが、ゴッドファーザーが死亡するとキル能力を獲得する。</div>
+                        </li>
+                        <li>
+                            <span class="bold lavel-impostor">ジャニター(Janitor)</span>
+                            <div class="indent1">キル能力はないが、死体を掃除して消すことができる。</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">マッドメイト(Madmate)</span>
+                    <div class="indent1"><span class="underline">クルーロールとして設定が必要。</span>インポスターのために行動するクルーメイト。停電(設定によってはコミュサボも)を直せない。</div>
+                </li>
+            </ul>
+            <h3 id="クルー陣営">クルー陣営</h3>
+            <ul>
+                <li>
+                    <span class="bold lavel-crew">シェリフ(Sheriff)</span>
+                    <div class="indent1">人外をキルできる。キルした対象にメディックのシールドが張られていた場合、誰も死亡しない。成人前のイビルミニは撃つことができず、自爆する。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">メイヤー(Mayor)</span>
+                    <div class="indent1">他のプレイヤーよりも多い票数を持つ。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">ベイト(Bait)</span>
+                    <div class="indent1">キルされると強制的にセルフレポートさせる。ベントの中に人がいるかどうかがわかる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">ライター(Lighter)</span>
+                    <div class="indent1">ライトをオンにすると、自分の視界が広がる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">スニッチ(Snitch)</span>
+                    <div class="indent1">タスクを全て完了すると、インポスターを示す矢印が見えるようになる。しかし、スニッチのタスク残量が少なくなると、同じようにインポスターからスニッチを示す矢印が見えるようになってしまう。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">エンジニア(Engineer)</span>
+                    <div class="indent1">ベントを使用できる。生きている間、設定した回数だけサボタージュを遠隔で一発修理できる。エンジニアがベントに入っている間、インポスターとジャッカルには全てのベントが青く見える。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">メディック(Medic)</span>
+                    <div class="indent1">ゲームごとに1人のプレイヤーにシールドを付与でき、メディックが死亡するとシールドも消える。ラバーズの後追いはシールドを貫通する。また、自身がレポートした死体がどのくらい前に死んだか知ることができる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">占い師(Fortune Teller)</span>
+                    <div class="indent1">はじめは自身が占い師である自覚はなく、クルーメイトとして表示される。設定したタスクを完了すると、自身が占い師であることを自覚し、能力を得る。能力を得ると会議ボタンが押せなくなる。占いは、一定時間近くにいたプレイヤーか、既に死亡したプレイヤーに対して行える。占いを行うと、インポスターに占い師を示す矢印が表示されてしまう。背徳者を占うと、背徳者は通知を受け取る。妖狐を占うと呪殺できる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">ミーディアム(Medium)</span>
+                    <div class="indent1">
+                        死体が発見された会議の次のターンのみ、その死体が死亡した場所で、死亡したプレイヤーの魂に質問を行える。質問の答えは、次の会議でチャット欄に送信される。質問は以下からランダムに選ばれる。
+                        <ul class="disc">
+                            <li>あなたの役職は？</li>
+                            <li>あなたを殺害したプレイヤーの体の色は？(明るい/暗い)</li>
+                            <li>あなたはいつ死んだ？</li>
+                            <li>あなたを殺害したプレイヤーの役職は？</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">タイムマスター(Time Master)</span>
+                    <div class="indent1">タイムシールドを張っている間にキルされると、キルは発生せず、全プレイヤーの時間を巻き戻す。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">スパイ(Spy)</span>
+                    <div class="indent1">インポスターからは、スパイはインポスターであるように見え、本物のインポスターと見分けがつかない。設定によって、インポスターはスパイをキルできないか、もしくはスパイも本物のインポスターもキルできる。</div>
+                </li>
+            </ul>
+            <h3 id="両方に出現">両方に出現</h3>
+            <ul>
+                <li>
+                    <span class="bold lavel-both">ミニ(Mini)</span>
+                    <div class="indent1">
+                        全プレイヤーに小さいキャラクターで表示される。時間経過で成長し、成人すると他のプレイヤーと同じような見た目になる。シェリフが成人前のミニを撃つと、イビルかナイスかに関係なく自爆する。
+                        <ul>
+                            <li>
+                                <span class="bold lavel-both">イビルミニ(Evil Mini): インポスターのミニ</span>
+                                <div class="indent1">成人するまでは、通常インポスターの2倍のキルクールを持つ。成人すると、キルクールが逆に通常の2/3になる。</div>
+                            </li>
+                            <li>
+                                <span class="bold lavel-both">ナイスミニ(Nice Mini): クルーメイトのミニ</span>
+                                <div class="indent1">成人前に追放されると、その時点で全員が負ける。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="bold lavel-both">ゲッサー(Guesser)</span>
+                    <div class="indent1">
+                        会議中に役職を推測することで、その場で対象を殺害できる。推測を間違えた場合、その場で自爆する。陣営だけでなく正確な役職まで当てなければならない。
+                        <ul>
+                            <li><span class="bold lavel-both">イビルゲッサー(Evil Guesser): インポスターのゲッサー</span></li>
+                            <li><span class="bold lavel-both">ナイスゲッサー(Nice Guesser): クルーメイトのゲッサー</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span class="bold lavel-both">スワッパー(Swapper)</span>
+                    <div class="indent1">
+                        会議中に、指定した2人に対して投じられた票を入れ替えることができる。
+                        <ul>
+                            <li><span class="bold lavel-both">イビルスワッパー(Evil Swapper): インポスターのスワッパー</span></li>
+                            <li><span class="bold lavel-both">ナイススワッパー(Nice Swapper): クルーメイトのスワッパー</span></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="第三陣営">第三陣営</h3>
+            <ul>
+                <li>
+                    <span class="bold lavel-neutral">ジャッカル(Jackal)</span>
+                    <div class="indent1">キルができる第三陣営。インポスターもしくはクルーメイトが全滅しても、ジャッカルが残っていた場合ゲームは続行される。設定によって、ジャッカルはサイドキックを作成できる。インポスターがおらず、かつサイドキックも含めたジャッカル陣営がクルーメイトと同数になると勝利。</div>
+                    <ul>
+                        <li>
+                            <span class="bold lavel-neutral">サイドキック(Sidekick)</span>
+                            <div class="indent1">ジャッカルが死亡するとジャッカルに昇格する。設定によっては、昇格後さらにサイドキックを作れる。</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">ラバーズ(Lovers)</span>
+                    <div class="indent1">2人組の第三陣営。設定によっては他の役職に重複して割り当てられる(インポスターラバーズ&シェリフラバーズのような組み合わせもあり得るが、相手の役職はわからない)。どちらかが死亡した場合、もう片方も後追いで死亡する。ゲーム終了時に2人とも生存していた場合勝利となる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">ジェスター(Jester)</span>
+                    <div class="indent1">会議で追放されるとその時点で単独勝利する。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">ヴァルチャー(Vulture)</span>
+                    <div class="indent1">設定された数の死体を食べると勝利する。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">妖狐(Fox)</span>
+                    <div class="indent1">他の第三陣営の単独勝利の場合を除き、タスクを完了し、最後まで生存していた場合単独勝利する。自身をキルできるプレイヤー(インポスター、ジャッカル、シェリフ)の位置が矢印で表示される。透明化でき、透明化中はキルされない。サボタージュを直せない。設定により、自身をキルできるプレイヤーを除く他のプレイヤーを背徳者にすることができる。</div>
+                    <ul>
+                        <li>
+                            <span class="bold lavel-neutral">背徳者(Immoralist)</span>
+                            <div class="indent1">妖狐が死亡すると自身も死亡する。妖狐の居場所がわかる。自殺ボタンで自殺できる。キルが起きると画面にエフェクトが表示される。</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">オポチュニスト(Opportunist)</span>
+                    <div class="indent1">ゲーム終了時に生きていた場合に追加勝利となる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">ペスト医師(Plague Doctor)</span>
+                    <div class="indent1">自身の生死にかかわらず、生存している全てのプレイヤーに感染させることで勝利する。1人のプレイヤーを感染源にすることで、そのプレイヤーの近くにいるプレイヤーに感染が広がる。さらに、ペスト医師を殺害したプレイヤーは感染してしまう。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">アーソニスト(Arsonist)</span>
+                    <div class="indent1">油ボタンを押しながら他のプレイヤーの近くにとどまることで、対象に油を塗ることができる。生存している全てのプレイヤーに油を塗ると、発火させることができ、単独勝利する。</div>
+                </li>
+            </ul>
+        </div>
+    </body>
+
+
+</html>
