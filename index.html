@@ -57,19 +57,61 @@
                     <div class="indent1">エンジニアを置き換え。第三陣営。タスクをすべて完了させてから何らかの要因で死亡すると勝利。ベントが使える。</div>
                 </li>
                 <li>
-                    <span class="bold lavel-impostor">相棒(Sidekick)</span>
-                    <div class="indent1">シェイプシフターを置き換え。ベント、サボ、変身ができ、キルができない。サイドキック以外のインポスターが全滅するとキル能力が解禁される。<span class="bold">v1.4b#4時点では廃止されている。</span></div>
+                    <span class="bold lavel-impostor">相棒(Sidekick)/マフィア(Mafia)</span>
+                    <div class="indent1">シェイプシフターを置き換え。ベント、サボ、変身ができ、キルができない。サイドキック以外のインポスターが全滅するとキル能力が解禁される。v1.4からはマフィアに改称</div>
                 </li>
             </ul>
             <h3 id="v1.4b#4で実装されている役職">v1.4b#4で実装されている役職</h3>
-            更新時点での最新版、バージョン1.4ベータ#4で実装されている役職です。β版なので正式版と比べてバグが発生する可能性が高いこと、開発者に迷惑がかかるのでバグなどに関する愚痴を書き込んだりしないことを理解した上で<a href="https://github.com/tukasa0001/TownOfHost/releases/tag/v1.4b%234">使用</a>。
+            <p>
+                更新時点での最新版、バージョン1.4ベータ#4で実装されている役職です。β版なので正式版と比べてバグが発生する可能性が高いこと、開発者に迷惑がかかるのでバグなどに関する愚痴を書き込んだりしないことを理解した上で<a href="https://github.com/tukasa0001/TownOfHost/releases/tag/v1.4b%234">使用</a>。
+            </p>
+            <p>
+                バウンティハンターのキル対象、魔女のキルモード、
+            </p>
+            <div class="img">
+                <img src="img/bountytargetclient.png" alt="クライアントMODが導入されている場合、画面の中央下部に表示される" title="クライアントMODあり" width="100%">
+                <div class="caption">MOD導入者視点</div>
+            </div>
+            <div class="img">
+                <img src="img/bountytargetnoclient.png" alt="クライアントMODが導入されていない場合、自分の名前の下に表示される" title="クライアントMODなし" width="100%">
+                <div class="caption">MOD非導入者視点</div>
+            </div>
             <ul>
                 <li>
                     <span class="bold lavel-impostor">バウンティハンター(BountyHunter)</span>
                     <div class="indent1">ターゲットが設定され、そのターゲットをキルすると直後のキルクールが短くなる。</div>
                 </li>
+                <li>
+                    <span class="bold lavel-impostor">魔女(Witch)</span>
+                    <div class="indent1">キルするごとにキル/スペル(魔術)のモードが切り替わり、スペルモードのときにキルボタンを押すとキルではなく対象に魔術をかける。魔術をかけられたプレイヤーはすぐには死なず、次の会議で名前の横に十字架が付いて表示される。その会議で魔女を吊ることができないと、対象は死亡する。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-impostor">マッドガーディアン(MadGuardian)</span>
+                    <div class="indent1">狂人の一種。割り当てられたタスクを全て終わらせるとバリアを手に入れ、インポスターにはキルされなくなる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-neutral">オポチュニスト(Opportunist)</span>
+                    <div class="indent1">試合終了時に生きていると追加勝利。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">メイヤー(Mayor)</span>
+                    <div class="indent1">一度に複数票を入れることができる。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">サボタージュマスター(SabotageMaster)</span>
+                    <div class="indent1">設定した回数だけ簡単にサボタージュを直す能力を持つ。リアクター、O2、ミラのコミュサボは片方をアクティベートするだけで直せる。停電はどこかのスイッチを押すと一気に全部直る。設定によっては、1枚ドアを開けるとその部屋のドアが全部開く。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">シェリフ(Sheriff)</span>
+                    <div class="indent1">人外をキルできるクルー。誤ってクルーをキルしようとすると自爆する。仕様上タスクがない。死亡すると毎会議後に自爆するのは仕様。</div>
+                </li>
+                <li>
+                    <span class="bold lavel-crew">スニッチ(Snitch)</span>
+                    <div class="indent1">タスクを終わらせると、スニッチ視点だけでインポスターの名前が赤く表示されるようになる。スニッチのタスクが残り1個になると、インポスター視点でスニッチの名前の横に星マークが表示されるようになってしまう。</div>
+                </li>
                 <div class="img">
-                    <img src="img/bountytargetclient.png" alt="クライアントMODが導入されている場合、画面の中央下部にターゲットが表示される" title="クライアントMODあり" width="100%">
+                    <img src="img/snitch.png" alt="インポスター視点では自分とスニッチの名前に星マークが付く" title="インポスター視点" width="100%">
+                    <div class="caption">スニッチ通知を受け取ったインポスター視点</div>
                 </div>
             </ul>
             <h2 id="TheOtherRolesGM">TheOtherRolesGM</h2>

@@ -72,12 +72,16 @@ li{
 }
 .img{
     width: 300px;
+    display: inline-block;
 }
 .img img{
     border-radius: 5px;
-    margin-top: 10px;
 }
-@media only screen and(max-device-width: 600px){
+.img .caption{
+    text-align: center;
+    font-size: 70%;
+}
+@media only screen and(max-device-width: 480px){
     .img{
         width: 100%;
     }
